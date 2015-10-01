@@ -1,0 +1,7 @@
+<p>Provider <%= provider.id %></p>
+<p><%= provider.name %></p>
+<p><%= provider.email %></p>
+<%= link_to t('providers.edit_provider'), edit_provider_path(provider)%>
+<%= link_to t('providers.destroy_provider'), provider_path(provider),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>

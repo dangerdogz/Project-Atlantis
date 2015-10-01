@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container__header">
+    <%= t('providers.edit_provider') %>
+  </div>
+
+  <% if @provider.errors.any? %>
+      <ul class="errors">
+        <% @provider.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+      </ul>
+  <% end %>
+
+  <div class="container__body">
+    <%= form_for @provider do |f| %>
+        <%= render :partial => 'form', :locals => {form: f} %>
+    <% end %>
+  </div>
+</div>

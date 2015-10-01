@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  providers:
+    new_provider: Add a new provider
+    no_provider: No providers
